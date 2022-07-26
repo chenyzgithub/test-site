@@ -1,0 +1,162 @@
+body{
+    background-color: #F0F8FF;
+    color: black;
+}
+
+/* @media (max-width: 500px) {
+    body {
+      background-color: blue;
+    }
+  } */
+
+.l1 a{
+  color:inherit ;
+}
+.l2 a{
+  color: initial;
+}
+.l3 a{
+  color: unset;
+}
+
+/* all属性
+body{
+  all: initial;
+} */
+
+/* body :first-child{
+  color:blueviolet;
+} */
+
+span[class*=sp12]{
+  color: brown;
+}
+
+/* p[class*="a"]{
+  color: darkcyan;
+} */
+
+p[class*="a" i]{
+  color: darkcyan;
+}
+
+.box::before{
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+
+.test+p{
+  color: coral;
+}
+.test+div{
+  color: coral;
+}
+
+/* p .sp3{
+  display: flex;
+} */
+
+.box1 {
+  writing-mode: vertical-rl;
+
+  width: 200px;
+  height: 250px;
+
+  inline-size: 300px;
+  block-size: 350px;
+  
+  padding: 25px;
+  border: 5px solid black;
+  margin: 10px;
+
+  background-color:maroon;
+}
+
+.d {
+  width: 200px;
+  height: 200px;
+}
+.d1 {
+  background-color: red;
+  margin-bottom: -20px;
+}
+.d2 {
+  background-color: pink;
+  margin-top: 30px;
+}
+
+
+.img {
+  height: 300px;
+  background-image: url(../images/0.jpg),linear-gradient(to right,red,black,yellow,blue);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.p1 {
+  writing-mode: vertical-lr;
+}
+
+.d3 {
+  background-color: pink;
+  margin-block-end: -20px;
+}
+.d4 {
+  background-color: black;
+  margin-block-start: -30px;
+}
+
+
+.d5 {
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/0.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* overflow:hidden; */
+}
+
+body {
+  font-size: 16px;
+}
+.d6>p {
+  color: white;
+  background-color: black;
+  font-size: 1.2em;
+  inline-size: 10em;
+}
+
+
+.d7 {
+  inline-size: 20vw;
+  block-size: 80px;
+  background-color: black;
+}
+
+.d8 {
+  opacity: .5;
+
+}
+.d9 {
+  color:rgba(0,0, 0, .5);
+}
+
+.d11 {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 150px;
+  height: 150px;
+  background-color: #000;
+}
+
+.d12 {
+  width: 200px;
+  height: 200px;
+  background-color: #000;
+  
+  
+}
