@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/testtwo.css">
+    <style>
+        p::selection {
+            color: red;
+            /* 该伪元素选择器，选择的是光标突出的内容 */
+        }
+
+        /* .p2 {
+            font-size: 24px;
+            text-shadow: 5px 3px 3px red,-2px -2px 2px pink;
+        }
+
+        .p3 a:focus {
+            border:1px solid;
+        }
+
+        .p3 a:hover {
+            border:1px solid;
+        }
+
+        .d1 {
+            background-color: #8f2;
+            color: white;
+            display: flex;
+        } */
+        
+        .d2>section {
+            /* 将section 元素变成弹性容器 */
+            display: flex;
+            /* 设置主轴方向 */
+            /* flex-direction: column; */ 
+            /* flex-direction: row-reverse; */
+            flex-wrap: wrap;
+        }
+
+        article {
+            /* 用于设置弹性项目的最小宽度 */
+            /* flex: 100px; */
+            /* 弹性项目按比例瓜分主轴方向剩余空间 */
+            /* flex: 1; */
+            flex: 1 200px;
+
+            padding: 10px;
+            margin: 10px;
+            background-color: #6aa;
+        }
+
+        article:nth-of-type(3) {
+            flex: 2 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <P>ASDASDASDASDASDASDASDASDASD</P>
+
+    <p class="p2">该段落用来测试文本阴影</p>
+
+    <p class="p3">这是一个测试<a href="#">链接</a></p>
+
+    <div class="d1">
+        <p class="p4">测试文本测试文本测试文本测试文本</p>
+    </div> -->
+
+    <d class="d2">
+        <section>
+            <article>
+                <h2>弹性项目一</h2>
+                <p>阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿</p>
+            </article>
+            <article>
+                <h2>弹性项目二</h2>
+                <p>阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿</p>
+                <p>阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿</p>
+                <p>阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿</p>
+                <p>阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿</p>
+            </article>
+            <article>
+                <h2>弹性项目三</h2>
+                <p>阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿</p>
+                <p>阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿</p>
+                <p>阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿</p>
+                <p>阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿阿斯顿</p>
+            </article>
+        </section>
+    </d>
+</body>
+</html>

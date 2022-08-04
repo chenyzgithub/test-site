@@ -160,3 +160,20 @@ body {
   
   
 }
+
+.t1,.t1 td,.t1 th{
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 20px;
+}
+
+.d13 {
+  width: 300px;
+  height: 300px;
+}
+.d13>.d14 {
+  width: inherit;
+  height: inherit;
+  background-color: #666;
+  background-image: linear-gradient(to right,black 20%,blue 40%,pink);
+}
