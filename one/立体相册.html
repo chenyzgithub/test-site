@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 300px;
+            height: 300px;
+            margin: 300px auto;
+        }
+        ul {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            list-style: none;
+            transform: rotateX(-20deg) rotateY(40deg);
+            transform-style: preserve-3d;
+            animation: xuanzhuan 5s linear infinite;
+        }
+
+        li {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+        }
+        li>img {
+            width: 100%;
+            height: 100%;
+            opacity: .5;
+        }
+
+        li:nth-of-type(1){
+            transform: translateZ(150px);
+        }
+        li:nth-of-type(2){
+            transform: rotateY(90deg) translateZ(150px) ;
+        }
+        li:nth-of-type(3){
+            transform: rotateY(180deg) translateZ(150px) ;
+        }
+        li:nth-of-type(4){
+            transform:rotateY(270deg)  translateZ(150px) ;
+        }
+        li:nth-of-type(5){
+            transform: rotateX(90deg) translateZ(150px) ;
+        }
+        li:nth-of-type(6){
+            transform: rotateX(270deg) translateZ(150px) ;
+        }
+
+        @keyframes xuanzhuan {
+            from{
+                transform: rotateX(0deg) rotateY(0deg)
+            }to{
+                transform: rotateX(360deg) rotateY(360deg)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li><img src="./img/1.jpg" alt=""></li>
+            <li><img src="./img/2.jpg" alt=""></li>
+            <li><img src="./img/3.jpg" alt=""></li>
+            <li><img src="./img/4.jpg" alt=""></li>
+            <li><img src="./img/5.jpg" alt=""></li>
+            <li><img src="./img/6.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>
